@@ -1,0 +1,34 @@
+.main-header {
+	display:  flex;
+	position: relative;
+	
+	background: url('../images/header-background-high.jpg') top center / cover no-repeat fixed;
+	
+	height: 100vh;
+	
+	> .header-info {
+		display:         flex;
+		flex-direction:  column;
+		justify-content: space-between;
+		flex:            1;
+		
+		align-items: center;
+		
+		margin: 1em 0;
+		
+		> h1 {
+			display:        inherit;
+			
+			flex-direction: column;
+			align-items:    center;
+			
+			font-size: 3em;
+			
+			text-align: center;
+			
+			> small {
+				margin-top: 1em;
+			}
+		}
+	}
+}

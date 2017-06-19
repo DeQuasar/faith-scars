@@ -1,0 +1,52 @@
+// Website footer
+.site-footer {
+	padding: 1em 0;
+	
+	// Darkens the footer background
+	background: darken($section-background, 0.4);
+	border-top: 0.1em solid lighten($section-background, 2);;
+	
+	> .container {
+		padding: 0;
+	}
+	
+	@include MediaQuery(Tablet) {
+		padding: 0.5em 1em;
+	}
+	
+	@include MediaQuery(Phone) {
+		padding: 1em 0;
+	}
+	
+	> .container > .footer-links {
+		display: 		 flex;
+		justify-content: space-between;
+		
+		align-items: center;
+		
+		text-transform: uppercase;
+		
+		@include MediaQuery(Phone) {
+			flex-direction: column;
+		}
+		
+		a {
+			padding: 0;
+			
+			border: none;
+		}
+		
+		> div {
+			display:     inherit;
+			align-items: center;
+			
+			> a {
+				margin: 0.5em 1em;
+				
+				@include MediaQuery(Phone) {
+					margin: 0.5em;
+				}
+			}
+		}
+	}
+}

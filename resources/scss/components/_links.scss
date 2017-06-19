@@ -1,0 +1,17 @@
+a {
+	padding: 0;
+	
+	color:		   rgba(255, 255, 255, 0.6);
+	border-bottom: 0.1em solid rgba(255, 255, 255, 0);
+	
+	transition: $Speed $Easing padding,
+				$Speed $Easing color,
+				$Speed $Easing border-color;
+	
+	&:hover {
+		padding-bottom: 0.3em;
+		
+		color:        rgba(255, 255, 255, 1);
+		border-color: $default-border-color;
+	}
+}

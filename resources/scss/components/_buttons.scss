@@ -1,0 +1,30 @@
+// Button Styling
+.button {
+	display: flex;
+	padding: 1em 1.5em;
+	
+	border:      $default-border;
+	font-weight: bold;
+	
+	transition: $Speed $Easing color,
+				$Speed $Easing background-color,
+				$Speed $Easing border-color;
+	
+	&:hover {
+		color: 			  $section-background;
+		background-color: rgb(255, 255, 255);
+		border-color:     rgb(255, 255, 255);
+	}
+	
+	&.small {
+		padding: 0.8em 1.5em;
+	}
+	
+	&.medium {
+		padding: 1em 2em;
+	}
+	
+	&.large {
+		padding: 1.2em 2.5em;
+	}
+}

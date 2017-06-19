@@ -1,0 +1,31 @@
+// Body Site Formatting for sticky footer
+.site {
+	display:        flex;
+	flex-direction: column;
+	
+	min-height: 100vh;
+}
+
+// Main Site-content Formatting
+.site-content {
+	flex: 1;
+	
+	// Formats the sections adding appropriate padding and background-color
+	> .about-band, > .band-info {
+		background: $section-background;
+	}
+}
+
+// Container -- Sets the max container width to $Desktop (1080px)
+.container {
+	padding: 10em 0;
+	margin:  0 auto;
+	
+	width:     $Desktop;
+	max-width: 100%;
+	
+	@include MediaQuery(Tablet) {
+		padding: 1em;
+		width:   auto;
+	}
+}

@@ -1,0 +1,77 @@
+.band-info > .container {
+	display:        flex;
+	flex-direction: column;
+	
+	justify-content: space-between;
+	
+	> .shows-music {
+		display:         inherit;
+		flex-direction:  row;
+		justify-content: space-between;
+		
+		margin-bottom: 5em;
+		
+		@include MediaQuery(Tablet) {
+			flex-direction: column;
+			margin-bottom:  2em;
+		}
+		
+		> section {
+			flex:   1;
+			margin: 0 0.5em;
+			
+			> header {
+				margin-bottom: 2em;
+				
+				text-align:    center;
+				border-bottom: $default-border;
+				
+				> h2 {
+					margin-bottom: 1em;
+				}
+			}
+			
+		}
+		
+		.show-list {
+			display:        flex;
+			flex-direction: column;
+			
+			> .show {
+				display: 		 inherit;
+				flex-direction:  row;
+				justify-content: space-between;
+				align-items:     center;
+				
+				padding-bottom: 2em;
+				margin-bottom:  2em;
+				
+				border-bottom: $default-border;
+				
+				@include MediaQuery(Tablet) {
+					flex-wrap: wrap;
+				}
+				
+				&:last-child {
+					border: none;
+				}
+				
+				a.button {
+					@include MediaQuery(Tablet) {
+						flex-grow:       1;
+						justify-content: center;
+						
+						margin-top: 1em;
+						width:      100%;
+					}
+				}
+				
+				> .date, .location > h5 {
+					display:         flex;
+					flex-direction:  column;
+					justify-content: flex-start;
+				}
+			}
+		}
+	}
+}

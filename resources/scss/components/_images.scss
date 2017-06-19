@@ -1,0 +1,11 @@
+.band-image-two {
+	position: relative;
+	
+	background: url('../images/f&s.jpg') top center / cover no-repeat fixed;
+	
+	height: 50vh;
+	
+	@include MediaQuery(Tablet) {
+		height: 25vh;
+	}
+}

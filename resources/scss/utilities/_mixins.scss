@@ -1,0 +1,8 @@
+// Media Query Mixin
+@mixin MediaQuery($Size) {
+	@if $Size == 'Phone' {
+		@media only screen and (max-width: $Phone) { @content; }
+	} @else if $Size == 'Tablet' {
+		@media only screen and (max-width: $Tablet) { @content; }
+	}
+}

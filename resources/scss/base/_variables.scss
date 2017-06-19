@@ -1,0 +1,19 @@
+// Font Sizes
+$base-font-size: 1em;
+$heading-scale:  0.2em; // Scaling for heading tag loop
+
+// Background Properties
+$section-background: rgb(0, 32, 34);
+
+// Border Properties
+$default-border-color: rgba(255, 255, 255, 0.4);
+$default-border:       0.1em solid $default-border-color;
+
+// Transition Properties
+$Speed:  0.2s;
+$Easing: ease-in-out;
+
+// Screen Size Variables
+$Desktop:     67.500em;
+$Tablet:      43.750em;
+$Phone:       40.000em;

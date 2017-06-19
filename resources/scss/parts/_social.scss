@@ -1,0 +1,28 @@
+.band-social {
+	display:        flex;
+	flex-direction: column;
+	
+	align-items: center;
+	
+	> .social-list {
+		display:   inherit;
+		flex-wrap: wrap;
+		
+		@include MediaQuery(Phone) {
+			flex-direction: column;
+		}
+		
+		> li {
+			margin: 2em 1em;
+			
+			flex:        1;
+			align-items: center;
+			
+			text-align: center;
+			
+			@include MediaQuery(Phone) {
+				margin: 1em 0.5em;
+			}
+		}
+	}
+}

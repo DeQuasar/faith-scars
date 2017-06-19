@@ -1,0 +1,34 @@
+// Fonts
+h1, h2, h3, h4, h5, h6, .logo a {
+	font-family: 'Rajdhani';
+}
+
+a, p, li, blockquote {
+	font-family: 'Fasthand';
+}
+
+// Text
+p, li, blockquote {
+	color: rgb(255, 255, 255);
+}
+
+// Links
+a {
+	text-decoration: none;
+	text-transform:  uppercase;
+}
+
+// Headings Loop h1 (2em) - h6 (0.8em)
+@for $i from 1 through 6 {
+	h#{$i} {
+		font-size:      $base-font-size + $heading-scale * (6 - $i);
+		letter-spacing: 0.1em;
+		
+		color:          rgb(255, 255, 255);
+		text-transform: uppercase;
+		
+		> small {
+			font-size: 50%;
+		}
+	}
+}
