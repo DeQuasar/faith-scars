@@ -515,6 +515,12 @@ main > .about-band > .container > .band-members > li {
           justify-content: flex-start;
 }
 
+@media only screen and (max-width: 43.75em) {
+  .band-info > .container > .shows-music .hear-us .music > iframe {
+    height: 50%;
+  }
+}
+
 .band-social {
   display: -webkit-box;
   display: -ms-flexbox;
