@@ -10,6 +10,10 @@ main > .about-band > .container {
 		
 		width: 40vw;
 		
+		h2 {
+			margin-bottom: 1em;
+		}
+		
 		@include MediaQuery(Tablet) {
 			width: 100%;
 			text-wrap: normal;

@@ -1,14 +1,1 @@
-document.addEventListener("DOMContentLoaded", function() {
-
-    window.onscroll = function() {
-        var nav = document.getElementById('main-nav');
-
-        if(window.pageYOffset > 100)
-            nav.classList.add('active');
-        else
-            nav.classList.remove('active');
-    };
-
-
-
-});
+document.addEventListener("DOMContentLoaded",function(){window.onscroll=function(){var e=document.getElementById("main-nav");window.pageYOffset>100?e.classList.add("active"):e.classList.remove("active")}});

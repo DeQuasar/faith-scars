@@ -378,6 +378,10 @@ main > .about-band > .container > .band-info {
   width: 40vw;
 }
 
+main > .about-band > .container > .band-info h2 {
+  margin-bottom: 1em;
+}
+
 @media only screen and (max-width: 43.75em) {
   main > .about-band > .container > .band-info {
     width: 100%;
@@ -502,7 +506,7 @@ main > .about-band > .container > .band-members > li {
   }
 }
 
-.band-info > .container > .shows-music .show-list > .show > .date, .band-info > .container > .shows-music .show-list > .show .location > h5 {
+.band-info > .container > .shows-music .show-list > .show > .date, .band-info > .container > .shows-music .show-list > .show .place > h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
