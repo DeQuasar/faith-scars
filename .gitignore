@@ -3,3 +3,5 @@ node_modules/*
 
 # Idea
 .idea/*
+.idea/vcs.xml
+.idea/workspace.xml
