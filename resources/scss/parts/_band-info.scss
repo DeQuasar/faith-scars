@@ -73,5 +73,14 @@
 				}
 			}
 		}
+		
+		.hear-us {
+			.music > iframe{
+				@include MediaQuery(Tablet) {
+					height: 50%;
+				}
+			}
+		}
+		
 	}
 }
